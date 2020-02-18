@@ -18,7 +18,7 @@ body{
 	margin-right: 2%;
 	grid-area: boxeen;
 	box-shadow: 2px 5px 2px #E4E2DF;
-	background-image: url("../content/header.jpg");
+	background-image: url("../content/HeroS.jpg");
 }
 
 #box2{
@@ -154,9 +154,10 @@ h1{
 	margin-top: 10%;
 	height: 12.5%;
 	width: 12.5%;
-	max-width: 65px;
+	min-width: 25px;
+	max-width: 60px;
 	background-color: #FDF4F0;
-	padding: 1% 2% 1% 2%;
+	padding: 1% 2% 2% 2%;
 	box-sizing: border-box;
 	border-radius: 5px;
 	box-shadow: 2px 2px 1px #E4E2DF;
@@ -204,9 +205,10 @@ h1{
 #box3 > div:nth-child(2){
 	box-sizing: border-box;
 	margin-top: 15%;
-	height: 12.5%;
+	height: 13.5%;
 	width: 15%;
-	max-width: 65px;
+	min-width: 25px;
+	max-width: 67px;
 	background-color: #F2EDFD;
 	padding: 1% 2% 1% 2%;
 	box-sizing: border-box;
@@ -349,7 +351,7 @@ h1{
 
 /** BEGIN MIDDLE SCREEN**/
 
-@media only screen and (min-width: 600px) and (max-width: 950px){
+@media only screen and (min-width: 650px) and (max-width: 950px){
 
 .container{
 	height: 1090px;
@@ -375,17 +377,185 @@ h1{
 
 /*BOX 1*/
 
+#box1{
+	background-image: url("../content/HeroM.jpg");
+}
+
+#box1 > h1{
+	font-size: 2.8em;
+	width: 80%;
+	margin-bottom: 5%;
+}
 
 
 
+#container > ul > li{
+	font-size: 1.3em;
+	margin-bottom: 2%;
+}
+
+#minutes{
+	font-size: 2.3em;
+}
+
+#seconds{
+	font-size: 2.3em;
+}
+#hours{
+	font-size: 2.3em;
+}
+
+#days{
+	font-size: 2.3em;
+}
+
+/*EINDE BOX1*/
 
 
+/*BEGIN BOX2*/
 
 
+h1{
+	margin-top: 1%;
+	margin-bottom: 0%;
+	margin-right: 40%:;
+	font-size: 1.5em;
+	width: 30%;
+	height: 5%;
 
 
+}
+
+#chart1{
+	height: 85%;
+	width: 100%;
+
+}
+
+#box2{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	content: none;
+}
+
+#box2::before{
+	content: none;
+}
+
+#box2 > div:nth-child(2){
+	margin-top: 4%;
+	margin-left: 40%;
+	margin-right: 4%;
+	height: 12.5%;
+	width: 20%;
+	min-width: 70px;
+	max-width: 70px;
+	background-color: #FDF4F0;
+	padding: 1% 2% 2% 3%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #E4E2DF;
+
+}
+
+#box2 > div:nth-child(2) > p{
+	margin: 0px;
+	font-size: 1em;
+	
+}
+/* EINDE BOX2*/
+
+/* BEGIN BOX3*/
 
 
+#chart2{
+	height: 85%;
+	width: 100%;
+
+}
+
+#box3{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	content: none;
+}
+
+#box3::before{
+	content: none;
+}
+
+#box3 > div:nth-child(2){
+	margin-top: 4%;
+	margin-right: 4%;
+	height: 9%;
+	width: 35%;
+	min-width: 110px;
+	max-width: 120px;
+	background-color: #F2EDFD;
+	padding: 1% 2% 2% 4%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #E4E2DF;
+
+}
+
+#box3 > div:nth-child(2) > p{
+	margin: 0px;
+	font-size: 1em;
+	
+}
+/* EINDE BOX3*/
+
+/* BEGIN BOX 4*/
+
+
+#box4{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#box4 > h1{
+	width: 1%;
+}
+
+#box4 > ul > li{
+	list-style: none;
+	font-size: 1em;
+	height: 15px;
+	margin-bottom: 10%;
+}
+
+#box4 > ul{
+	padding-left: 2%;
+	margin-top: 15%;
+
+
+}
+
+#box4 > ul:nth-child(4) > li:nth-child(1){
+	font-size: 1.2em;
+
+}
+
+#box4 > ul:nth-child(2) > li:nth-child(1){
+	font-size: 1.2em;
+}
+
+
+#box4 > div{
+	margin: 0px;
+	height: 90%;
+	display: flex;
+	align-self: center;
+}
+
+
+/* EINDE BOX4*/
 }
 
 /** END MIDDLE SCREEN**/
