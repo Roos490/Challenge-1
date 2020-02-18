@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title> dashboard space</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>01_viewport example</title>
+		<link type="text/css" href="_css/style.css" rel="stylesheet" />	
+		<link type="text/css" href="_css/fonts.css" rel="stylesheet" />	
+		<script type="text/javascript" src="_js/charts.js"></script>
+</head>
+<body>
+</body>
+
+
+	<div id="grid" class="container">
+
+		<div class="ct-chart ct-golden-section" id="box1"> 
+			<h1> Bestemming bereikt over</h1>
+			<div id="container">
+  				<ul>
+    				<li><span id="days"></span> Dagen</li>
+    				<li><span id="hours"></span> Uren</li>
+    				<li><span id="minutes"></span> Minuten </li>
+    				<li><span id="seconds"></span> Secondes</li>
+  				</ul>
+			</div>
+		</div>
+
+  	<div class="ct-chart ct-golden-section" id="box2">
+  			<h1>Hartslag</h1>
+  			<div>
+  				<p> Do 5 maart</p>
+  				<p> 70 BPM</p>
+  			</div>
+  			<div id="chart1"></div>
+  	</div>
+    <div class="ct-chart ct-golden-section" id="box3"> 
+         <h1> Slaap routine</h1>
+        <div>
+          <p> Do 5 maart</p>
+          <p> 8 uur geslapen</p>
+        </div>
+        <div id="chart2"></div>
+  	</div>
+  	<div class="ct-chart ct-golden-section" id="box4">
+  			 <h1> Voeding</h1>
+        <div >
+          <p id="chart3"></p>
+
+        </div>
+  			<div>
+          <p id="chart3"></p>
+          
+        </div>
+  	</div>
+  </div>
+
+		
+<script>
+  
+/* CHART1*/
+ new Chartist.Line('#chart1', {
+  labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ],
+  series: [
+    [ 70, 70, 100, 60, 90, 120, 85, 100, 90, 80, 80, 90, 80,70, 80,],
+  ]
+}, {
+  low: 0,
+  showArea: true
+});
+
+
+ /* CHARTS 2*/
+
+ new Chartist.Bar('#chart2', {
+  labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,],
+  series: [12, 4, 9, 6, 4, 6, 8, 9, 10, 2, 3, 9, 7, 8, 9,],
+}, {
+  distributeSeries: true
+});
+
+
+/* CHART 3*/
+
+var data = {
+  labels: ['Calorien', 'Apples', 'Grapes'],
+  series: [20, 15, 20, 10, 5,]
+};
+
+var options = {
+  labelInterpolationFnc: function(value) {
+    return value[0]
+  }
+};
+
+var responsiveOptions = [
+  ['screen and (min-width: 640px)', {
+    chartPadding: 30,
+    labelOffset: 100,
+    labelDirection: 'explode',
+    labelInterpolationFnc: function(value) {
+      return value;
+    }
+  }],
+  ['screen and (min-width: 1024px)', {
+    labelOffset: 80,
+    chartPadding: 20
+  }]
+];
+
+new Chartist.Pie('#chart3', data, options, responsiveOptions);
+
+
+/* CHART 3*/
+
+var data = {
+  labels: ['Bananas', 'Apples', 'Grapes'],
+  series: [10, 10, 40, 10, 5,]
+};
+
+var options = {
+  labelInterpolationFnc: function(value) {
+    return value[0]
+  }
+};
+
+var responsiveOptions = [
+  ['screen and (min-width: 640px)', {
+    chartPadding: 30,
+    labelOffset: 100,
+    labelDirection: 'explode',
+    labelInterpolationFnc: function(value) {
+      return value;
+    }
+  }],
+  ['screen and (min-width: 1024px)', {
+    labelOffset: 80,
+    chartPadding: 20
+  }]
+];
+
+new Chartist.Pie('#chart4', data, options, responsiveOptions);
+
+
+</script>
+
+
+		
+
+
+
+
+
+
+</html>

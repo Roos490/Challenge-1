@@ -1,0 +1,22 @@
+@font-face{
+	font-family: "Oswald-Regular.ttf";
+	src: url("fonts/Oswald-Regular.tt");
+	src: url("fonts/Oswald-Semibold.tt");
+
+}
+
+h1{
+	font-family: Oswald-Regular;
+	font-weight: normal;
+}
+
+p{
+	font-family: Oswald-Regular;
+	font-weight: normal;}
+
+ul> li {
+
+	font-family: Oswald-Regular;
+	font-weight: normal;
+
+}
