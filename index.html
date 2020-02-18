@@ -17,7 +17,7 @@
 
 	<div id="grid" class="container">
 
-		<div class="ct-chart ct-golden-section" id="box1"> 
+		<section class="ct-chart ct-golden-section" id="box1"> 
 			<h1> Bestemming bereikt over</h1>
 			<div id="container">
   				<ul>
@@ -27,35 +27,47 @@
     				<li><span id="seconds"></span> Secondes</li>
   				</ul>
 			</div>
-		</div>
+		</section>
 
-  	<div class="ct-chart ct-golden-section" id="box2">
+  	<section class="ct-chart ct-golden-section" id="box2">
   			<h1>Hartslag</h1>
   			<div>
   				<p> Do 5 maart</p>
   				<p> 70 BPM</p>
   			</div>
   			<div id="chart1"></div>
-  	</div>
-    <div class="ct-chart ct-golden-section" id="box3"> 
+  	</section>
+    <section class="ct-chart ct-golden-section" id="box3"> 
          <h1> Slaap routine</h1>
         <div>
           <p> Do 5 maart</p>
           <p> 8 uur geslapen</p>
         </div>
         <div id="chart2"></div>
-  	</div>
-  	<div class="ct-chart ct-golden-section" id="box4">
+  	</section>
+  	<section class="ct-chart ct-golden-section" id="box4">
   			 <h1> Voeding</h1>
+        
+          <ul>
+            <li>Eten</li>
+            <li><span style='font-size: 2em; color: #EA7486;'>&#9632;</span>KCAL</li>
+            <li><span style='font-size: 2em; color: #94C9C8;'>&#9632;</span>Vet</li>
+            <li><span style='font-size: 2em; color: #6A7EE0;;'>&#9632;</span>Vitaminen</li>
+          </ul>
         <div >
           <p id="chart3"></p>
-
         </div>
-  			<div>
-          <p id="chart3"></p>
+  			   <ul>
+            <li> Dranken</li>
+            <li><span style='font-size: 2em; color: #EA7486;'>&#9632;</span>Water</li>
+            <li><span style='font-size: 2em; color: #94C9C8;'>&#9632;</span>Alcohol</li>
+            <li><span style='font-size: 2em; color: #6A7EE0;'>&#9632;</span>Frisdrank</li>
+          </ul>
+        <div>
+          <p id="chart4"></p>
           
         </div>
-  	</div>
+  	</section>
   </div>
 
 		
@@ -86,63 +98,29 @@
 /* CHART 3*/
 
 var data = {
-  labels: ['Calorien', 'Apples', 'Grapes'],
-  series: [20, 15, 20, 10, 5,]
+  series: [4, 2, 4,]
 };
 
-var options = {
+var sum = function(a, b) { return a + b };
+
+new Chartist.Pie('#chart3', data, {
   labelInterpolationFnc: function(value) {
-    return value[0]
+    return Math.round(value / data.series.reduce(sum) * 100) + '%';
   }
-};
-
-var responsiveOptions = [
-  ['screen and (min-width: 640px)', {
-    chartPadding: 30,
-    labelOffset: 100,
-    labelDirection: 'explode',
-    labelInterpolationFnc: function(value) {
-      return value;
-    }
-  }],
-  ['screen and (min-width: 1024px)', {
-    labelOffset: 80,
-    chartPadding: 20
-  }]
-];
-
-new Chartist.Pie('#chart3', data, options, responsiveOptions);
-
-
+});
 /* CHART 3*/
 
 var data = {
-  labels: ['Bananas', 'Apples', 'Grapes'],
-  series: [10, 10, 40, 10, 5,]
+  series: [6, 1.5, 3.5]
 };
 
-var options = {
+var sum = function(a, b) { return a + b };
+
+new Chartist.Pie('#chart4', data, {
   labelInterpolationFnc: function(value) {
-    return value[0]
+    return Math.round(value / data.series.reduce(sum) * 100) + '%';
   }
-};
-
-var responsiveOptions = [
-  ['screen and (min-width: 640px)', {
-    chartPadding: 30,
-    labelOffset: 100,
-    labelDirection: 'explode',
-    labelInterpolationFnc: function(value) {
-      return value;
-    }
-  }],
-  ['screen and (min-width: 1024px)', {
-    labelOffset: 80,
-    chartPadding: 20
-  }]
-];
-
-new Chartist.Pie('#chart4', data, options, responsiveOptions);
+});
 
 
 </script>

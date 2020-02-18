@@ -18,6 +18,7 @@ body{
 	margin-right: 2%;
 	grid-area: boxeen;
 	box-shadow: 2px 5px 2px #E4E2DF;
+	background-image: url("../content/header.jpg");
 }
 
 #box2{
@@ -51,6 +52,7 @@ body{
 	grid-area: boxvier;
 	display: flex;
 	flex-direction: row;
+	box-shadow: 2px 5px 2px #E4E2DF;
 
 }
 
@@ -60,18 +62,49 @@ body{
 
 #box1 > h1{
 	width: 400px;
-	font-size: 1.5em;
+	height: 50px;
+	margin: 0px;
+	font-size: 2em;
+	color: white;
+	text-shadow: 1px 1px 7px #111111;
+	padding-left: 3%;
 }
 
-li span {
+#minutes{
   display: inline;
   font-size: 2.3rem;
+  color: white;
+  text-shadow: 1px 2px 7px #111111;
 }
 
+#seconds{
+  display: inline;
+  font-size: 2.3rem;
+  color: white;
+  text-shadow: 1px 1px 10px #111111;
+}
+
+#days{
+  display: inline;
+  font-size: 2.3rem;
+  color: white;
+  text-shadow: 1px 1px 7px #111111;
+}
+
+#hours{
+  display: inline;
+  font-size: 2.3rem;
+  color: white;
+  text-shadow: 1px 1px 7px #111111;
+}
+
+
 #container > ul > li{
-	font-size: 0.9em;
+	font-size: 1em;
 	list-style: none;
 	margin-right: 1%;
+	color: white;
+	text-shadow: 1px 1px 7px #111111;
 	
 }
 
@@ -243,31 +276,76 @@ h1{
 
 
 /*BEGIN BOX4*/
-#chart3{
-	height: 50%;
+#box4{
+	padding-left: 2%;
+}
+
+#box4 > h1{
+	margin: 0%;
+
+}
+
+#box4 > ul > li{
+	list-style: none;
+	font-size: 0.6em;
+	height: 15px;
+}
+
+
+#box4 > ul{
+	padding-left: 2%;
+	margin-top: 15%;
+
+
+}
+
+#box4 > ul:nth-child(4) > li:nth-child(1){
+	font-size: 0.8em;
+}
+
+#box4 > ul:nth-child(2) > li:nth-child(1){
+	font-size: 0.8em;
+}
+
+#box4 > div{
+	margin: 0px;
+	height: 80%;
 	display: flex;
 	align-self: center;
+}
+
+#chart3{
+	height: 70%;
+	display: flex;
+	align-self: center;
+	margin: 0px;
 }
 
 #chart4{
-	height: 50%;
+	height: 70%;
 	display: flex;
 	align-self: center;
+	margin: 0px;
 }
 
+ #chart3.ct-series-a .ct-area, .ct-series-a .ct-slice-donut-solid, .ct-series-a .ct-slice-pie{
+ 	fill: #EA7486;
+ 	stroke: white;
+ }
 
-#box4 > div{
-	width: 50%;
+#chart3.ct-series-b .ct-area, .ct-series-b .ct-slice-donut-solid, .ct-series-b .ct-slice-pie{
+	fill: #94C9C8;
+	stroke: white;
+ } 
 
-}
+ #chart3.ct-series-b .ct-area, .ct-series-b .ct-slice-donut-solid, .ct-series-c .ct-slice-pie {
+ 	fill: #6A7EE0;
+ 	stroke: white;
+ }
+
 /*EINDE BOX4*/
 
-
-
-
 /**END SMALL SCREEN**/
-
-
 
 /** BEGIN MIDDLE SCREEN**/
 
@@ -284,6 +362,7 @@ h1{
 
 #grid{
 	display: grid;
+	grid-column-gap: 5;
 	grid-row-gap: 2%;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 19% 28.3% 28.3% 28.3% ;
@@ -293,7 +372,22 @@ h1{
 	"boxvier boxvier"
 	;
 }
+
+/*BOX 1*/
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
 /** END MIDDLE SCREEN**/
 
 /**BEGIN LARGE SCREEN**/
