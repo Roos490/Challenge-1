@@ -553,6 +553,14 @@ h1{
 	align-self: center;
 }
 
+#chart3 > svg > g:nth-child(4) > text{
+	font-size: 1em;
+}
+
+#chart4 > svg > g:nth-child(4) > text{
+	font-size: 1em;
+}
+
 
 /* EINDE BOX4*/
 }
@@ -669,6 +677,8 @@ h1{
 
 }
 
+#chart2{
+}
 #box3 > div:nth-child(2) > p{
 	margin: 0px;
 	font-size: 1em;
@@ -734,11 +744,23 @@ h1{
 }
 
 
+#chart3{
+	height: 65%;
+}
 
+#chart4{
+	height: 65%;
+}
 
+#chart3 > svg > g:nth-child(4) > text{
+	font-size: 1.3em;
+}
+
+#chart4 > svg > g:nth-child(4) > text{
+	font-size: 1.3em;
+}
 
 /*EINDE BOX4*/
-
 
 
 }
@@ -747,7 +769,7 @@ h1{
 
 /** BEGIN XL SCREEN**/
 
-@media only screen and (min-width: 1200px) and (max-width: 1300px){
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
 
 .container{
 	display: flex;
@@ -772,11 +794,141 @@ h1{
 	"boxeen boxeen boxtwee boxtwee"
 	"boxvier boxvier boxtwee boxtwee"
 	"boxvier boxvier boxdrie boxdrie"
-	"boxvier boxvier boxdrie boxdrie"
+	"boxvier boxvier boxdrie boxdrie";
+}
 
-	;
+
+/* BEGIN BOX1*/
+#box1 > h1{
+	font-size: 2.5em;
+}
+
+#container > ul > li{
+	font-size: 1.2em;
 
 }
+
+
+#container > ul{
+	margin-top: 10%;
+}
+
+#days{
+	font-size: 2em;
+}
+
+#hours{
+	font-size: 2em;
+}
+
+#minuten{
+	font-size: 2em;
+}
+
+#seconds{
+	font-size: 2em;
+}
+
+/* EINDE BOX1*/
+
+/* BEGIN BOX 2*/
+#box2 > h1{
+	font-size: 1.6em;
+}
+
+#box2 > div:nth-child(2){
+	margin-top: 9%;
+	margin-right: 4%;
+	height: 15.5%;
+	width: 14%;
+	min-width: 0px;
+	max-width: 102px;
+	background-color: #FDF4F0;
+	padding: 1% 2% 1% 3%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #E4E2DF;
+}
+
+
+#box2 > div:nth-child(2) > p{
+	font-size: 0.8em;
+}
+
+/* EINDE BOX 2*/
+
+/* BEGIN BOX 3*/
+
+#box3 > h1{
+	font-size: 1.6em;
+}
+
+#box3 > div:nth-child(2){
+	margin-top: 15%;
+	margin-right: 4%;
+	height: 16.5%;
+	width: 15%;
+	min-width: 0px;
+	max-width: 102px;
+	background-color: #F2EDFD;
+	padding: 1% 2% 1% 3%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #E4E2DF;
+}
+
+
+#box3 > div:nth-child(2) > p{
+	font-size: 0.8em;
+}
+
+/* EINDE BOX 3*/
+
+/* BEGIN BOX 4*/
+
+#box4 > h1{
+	font-size: 1.6em;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+#box4 > div{
+	height: 100%;
+	display: flex;
+	align-self: flex-end;
+
+}
+
+#box4 > div:nth-child(5){
+	margin-right: 10%;
+}
+
+#box4{
+	box-sizing: border-box;
+}
+
+#box4 > ul{
+	height: 10%;
+}
+
+#box4 > ul > li{
+	font-size: 1em;
+}
+
+#chart3{
+	height: 100%;
+}
+
+#chart4{
+	height: 100%;
+	width: 100%;
+}
+
+/* EINDE BOX 4*/
+
+
+
 
 }
 
