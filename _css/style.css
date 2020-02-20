@@ -784,7 +784,8 @@ h1{
 
 #grid{
 	display: grid;
-	grid-row-gap: 2%;
+	grid-row-gap: 3%;
+	grid-column-gap:  2%;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 
 	25% 25% 25% 25%;
@@ -889,41 +890,71 @@ h1{
 #box4 > h1{
 	font-size: 1.6em;
 	display: flex;
-	justify-content: space-around;
+
 }
 
 
 #box4 > div{
-	height: 100%;
+	height: 50%;
 	display: flex;
-	align-self: flex-end;
 
 }
 
-#box4 > div:nth-child(5){
-	margin-right: 10%;
-}
 
 #box4{
 	box-sizing: border-box;
+	flex-direction: row;
+	flex-wrap: wrap;
+
 }
 
 #box4 > ul{
 	height: 10%;
+
 }
 
 #box4 > ul > li{
 	font-size: 1em;
+	margin-bottom: 10%;
 }
 
 #chart3{
-	height: 100%;
+	height: 70%;
 }
 
 #chart4{
-	height: 100%;
+	height:70%;
 	width: 100%;
 }
+
+#box4 > ul:nth-child(4) > li:nth-child(1){
+	font-size: 1.2em;
+}
+
+#box4 > ul:nth-child(2){
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+
+#box4 > ul:nth-child(4){
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+
+#box4 > ul:nth-child(2) > li:nth-child(1){
+	font-size: 1.2em;
+}
+
+#chart3 > svg > g:nth-child(4) > text{
+	font-size: 1.3em;
+}
+
+#chart4 > svg > g:nth-child(4) > text{
+	font-size: 1.3em;
+}
+
 
 /* EINDE BOX 4*/
 
